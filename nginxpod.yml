@@ -3,10 +3,10 @@ kind: Pod
 metadata:
   name: nginx-pod
   labels:
-    app: nginxsss
+    app: javawebapp
 spec:
   containers:
     - name: first-container
-      image: nginx
+      image: dockerhandson/java-web-app
       ports:
-      - containerPort: 80
+      - containerPort: 8080
